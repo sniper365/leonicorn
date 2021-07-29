@@ -94,7 +94,7 @@ const ExpandedFooter: React.FC<ExpandedFooterProps> = ({ pool, account }) => {
   return (
     <ExpandedWrapper flexDirection="column">
       <Flex mb="2px" justifyContent="space-between" alignItems="center">
-        <Text small>{t('Total staked')}:</Text>
+        <Text small color="textSubtle">{t('Total staked')}:</Text>
         <Flex alignItems="flex-start">
           {totalStaked && totalStaked.gte(0) ? (
             <>
@@ -136,11 +136,11 @@ const ExpandedFooter: React.FC<ExpandedFooterProps> = ({ pool, account }) => {
       {isAutoVault && (
         <Flex mb="2px" justifyContent="space-between" alignItems="center">
           {tooltipVisible && tooltip}
-          <TooltipText ref={targetRef} small>
+          <TooltipText ref={targetRef} small color="textSubtle">
             {t('Performance Fee')}
           </TooltipText>
           <Flex alignItems="center">
-            <Text ml="4px" small>
+            <Text ml="4px" small color="textSubtle">
               {performanceFee / 100}%
             </Text>
           </Flex>

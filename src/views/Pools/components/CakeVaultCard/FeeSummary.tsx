@@ -18,10 +18,10 @@ const FeeSummary: React.FC<FeeSummaryProps> = ({ stakingTokenSymbol, stakeAmount
   const feeInCake = (parseFloat(stakeAmount) * (feeAsDecimal / 100)).toFixed(4)
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
     <>
-      <Text bold mb="4px">
+      <Text bold mb="4px" color="textSubtle">
         {t('Unstaking fee: %fee%%', { fee: feeAsDecimal })}
       </Text>
-      <Text>
+      <Text color="textSubtle">
         {t(
           'Only applies within 3 days of staking. Unstaking after 3 days will not include a fee. Timer resets every time you stake new CAKE in the pool.',
         )}
@@ -34,7 +34,7 @@ const FeeSummary: React.FC<FeeSummaryProps> = ({ stakingTokenSymbol, stakeAmount
     <>
       <Flex mt="24px" alignItems="center" justifyContent="space-between">
         {tooltipVisible && tooltip}
-        <TooltipText ref={targetRef} small>
+        <TooltipText ref={targetRef} small color="textSubtle">
           {t('Unstaking Fee')}
         </TooltipText>
         <Text fontSize="14px">

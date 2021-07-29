@@ -61,7 +61,7 @@ const UnstakingFeeCountdownRow: React.FC<UnstakingFeeCountdownRowProps> = ({ isT
       flexDirection={isTableVariant ? 'column' : 'row'}
     >
       {tooltipVisible && tooltip}
-      <TooltipText ref={targetRef} small>
+      <TooltipText ref={targetRef} small color="textSubtle">
         {noFeeToPay ? '0' : feeAsDecimal}% {getRowText()}
       </TooltipText>
       {shouldShowTimer && <WithdrawalFeeTimer secondsRemaining={secondsRemaining} />}
