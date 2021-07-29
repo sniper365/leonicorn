@@ -10,9 +10,11 @@ export const light: CardTheme = {
   boxShadowWarning: shadows.warning,
   cardHeaderBackground: {
     default: lightColors.gradients.cardHeader,
-    blue: lightColors.gradients.blue,
+    // blue: lightColors.gradients.blue,
     bubblegum: lightColors.gradients.bubblegum,
-    violet: lightColors.gradients.violet,
+    // violet: lightColors.gradients.violet,
+    blue: "linear-gradient(90deg, #03A9F4 0%, #EA1E62 100%)",
+    violet: " linear-gradient(90deg, #FFC108 0%, #8BC44A 100%)",
   },
   dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
 };

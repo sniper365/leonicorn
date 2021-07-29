@@ -65,12 +65,13 @@ const Header = styled(CardHeader)<{ ifoId: string }>`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: ${({ ifoId }) => `url('/images/ifos/${ifoId}-bg.svg')`};
+  // background-image: ${({ ifoId }) => `url('/images/ifos/${ifoId}-bg.svg')`};
+  background-image: url('/images/ifos/default-bg.svg');
 `
 
 const FoldableContent = styled.div<{ isVisible: boolean; isActive: boolean }>`
   display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
-  background: ${({ isActive, theme }) => (isActive ? theme.colors.gradients.bubblegum : theme.colors.dropdown)};
+  background: ${({ isActive, theme }) => (isActive ? theme.colors.gradients.bubblegum : theme.colors.backgroundAlt)};
 `
 
 const CardsWrapper = styled.div<{ singleCard: boolean }>`
@@ -94,7 +95,7 @@ const StyledCardBody = styled(CardBody)`
 const StyledCardFooter = styled(CardFooter)`
   text-align: center;
   padding: 8px;
-  background: ${({ theme }) => theme.colors.backgroundAlt};
+  background: ${({ theme }) => theme.colors.dropdown};
 `
 
 const IfoFoldableCard: React.FC<IfoFoldableCardProps> = ({ ifo, publicIfoData, walletIfoData, isInitiallyVisible }) => {

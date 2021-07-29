@@ -61,7 +61,7 @@ const SmallCard: React.FC<IfoCardProps> = ({ poolId, ifo, publicIfoData, walletI
             </div>
           </Flex>
         </CardHeader>
-        <CardBody>
+        <CardBody style={{backgroundColor:"#303742"}}>
           <IfoCardTokens
             poolId={poolId}
             ifo={ifo}

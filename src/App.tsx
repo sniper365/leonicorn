@@ -30,9 +30,9 @@ import Pools from './views/Pools'
 const NotFound = lazy(() => import('./views/NotFound'))
 const Home = lazy(() => import('./views/Home'))
 const Farms = lazy(() => import('./views/Farms'))
+const Ifos = lazy(() => import('./views/Ifos'))
 // const FarmAuction = lazy(() => import('./views/FarmAuction'))
 // const Lottery = lazy(() => import('./views/Lottery'))
-// const Ifos = lazy(() => import('./views/Ifos'))
 // const Collectibles = lazy(() => import('./views/Collectibles'))
 // const Teams = lazy(() => import('./views/Teams'))
 // const Team = lazy(() => import('./views/Teams/Team'))
@@ -78,11 +78,11 @@ const App: React.FC = () => {
             <Route path="/pools">
               <Pools />
             </Route>
-            {/* <Route path="/lottery">
-              <Lottery />
-            </Route>
             <Route path="/ifo">
               <Ifos />
+            </Route>
+            {/* <Route path="/lottery">
+              <Lottery />
             </Route>
             <Route path="/collectibles">
               <Collectibles />

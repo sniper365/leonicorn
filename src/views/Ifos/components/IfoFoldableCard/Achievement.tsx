@@ -44,13 +44,13 @@ const Achievement: React.FC<Props> = ({ ifo, publicIfoData }) => {
   return (
     <Container>
       <AchievementFlex isFinished={publicIfoData.status === 'finished'} alignItems="center" flexGrow={1}>
-        <Image src={`/images/achievements/ifo-${tokenName}.svg`} width={56} height={56} mr="8px" />
+        {/* <Image src={`/images/achievements/ifo-${tokenName}.svg`} width={56} height={56} mr="8px" /> */}
         <Flex flexDirection="column">
-          <Text color="secondary" fontSize="12px">
+          <Text color="textSubtle" fontSize="12px" >
             {`${t('Achievement')}:`}
           </Text>
           <Flex>
-            <Text bold mr="8px">
+            <Text bold mr="8px" color="textSubtle">
               {t('IFO Shopper: %title%', { title: campaignTitle })}
             </Text>
             <Flex alignItems="center" mr="8px">

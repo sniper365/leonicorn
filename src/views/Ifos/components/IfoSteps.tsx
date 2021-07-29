@@ -17,7 +17,7 @@ interface Props {
 }
 
 const Wrapper = styled(Container)`
-  background: ${({ theme }) => theme.colors.gradients.bubblegum};
+  // background: ${({ theme }) => theme.colors.gradients.bubblegum};
   margin-left: -16px;
   margin-right: -16px;
   padding-top: 48px;
@@ -55,7 +55,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
       case 0:
         return (
           <CardBody>
-            <Heading as="h4" color="secondary" mb="16px">
+            <Heading as="h4" color="text" mb="16px">
               {t('Activate your Profile')}
             </Heading>
             <Text color="textSubtle" small mb="16px">
@@ -75,7 +75,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
       case 1:
         return (
           <CardBody>
-            <Heading as="h4" color="secondary" mb="16px">
+            <Heading as="h4" color="text" mb="16px">
               {t('Get CAKE-BNB LP Tokens')}
             </Heading>
             <Text color="textSubtle" small>
@@ -96,7 +96,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
       case 2:
         return (
           <CardBody>
-            <Heading as="h4" color="secondary" mb="16px">
+            <Heading as="h4" color="text" mb="16px">
               {t('Commit LP Tokens')}
             </Heading>
             <Text color="textSubtle" small>
@@ -108,7 +108,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
       case 3:
         return (
           <CardBody>
-            <Heading as="h4" color="secondary" mb="16px">
+            <Heading as="h4" color="text" mb="16px">
               {t('Claim your tokens and achievement')}
             </Heading>
             <Text color="textSubtle" small>
@@ -125,7 +125,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
 
   return (
     <Wrapper>
-      <Heading as="h2" scale="xl" color="secondary" mb="24px" textAlign="center">
+      <Heading as="h2" scale="xl" color="text" mb="24px" textAlign="center">
         {t('How to Take Part')}
       </Heading>
       <Stepper>
