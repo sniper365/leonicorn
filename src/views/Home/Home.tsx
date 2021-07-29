@@ -15,23 +15,14 @@ import useFetchLotteryForPromos from 'views/Home/hooks/useFetchLotteryForPromos'
 
 const Hero = styled.div`
   align-items: center;
-  background-image: url('/images/pan-bg-mobile.svg');
-  background-repeat: no-repeat;
-  background-position: top center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: auto;
   margin-bottom: 32px;
-  padding-top: 116px;
+  padding-top: 32px;
   text-align: center;
 
-  ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/pan-bg2.svg'), url('/images/pan-bg.svg');
-    background-position: left center, right center;
-    height: 165px;
-    padding-top: 0;
-  }
 `
 
 const Cards = styled(BaseLayout)`
@@ -95,10 +86,10 @@ const Home: React.FC = () => {
       <LotteryBanner currentLotteryPrize={currentLotteryPrize} />
       <Page>
         <Hero>
-          <Heading as="h1" scale="xl" mb="24px" color="secondary">
+          <Heading as="h1" scale="xl" mb="24px" color="primary">
             {t('PancakeSwap')}
           </Heading>
-          <Text>{t('The #1 AMM and yield farm on Binance Smart Chain.')}</Text>
+          <Text color="textSubtle">{t('The #1 AMM and yield farm with deflationary token model on Binance smart Chain.')}</Text>
         </Hero>
         <div>
           <Cards>

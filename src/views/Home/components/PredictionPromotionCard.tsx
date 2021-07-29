@@ -9,7 +9,7 @@ import useIntersectionObserver from 'hooks/useIntersectionObserver'
 import Balance from '../../../components/Balance'
 
 const StyledPredictionCard = styled(Card)`
-  background-image: url('/images/prediction_promotion.png');
+  background-image: url('/images/prediction_promotion.svg');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 50%;
@@ -118,11 +118,11 @@ const PredictionPromotionCard = () => {
     <StyledPredictionCard>
       <CardBody>
         <PredictionLive mb="24px">{t('Predictions Now Live')}</PredictionLive>
-        <PredictionOver bold color="#7645d9">
+        <PredictionOver bold color="primary">
           {over}
         </PredictionOver>
         {bnbWonInUsd ? (
-          <PredictionWon mb="24px" color="#7645d9" bold prefix="$" decimals={0} value={bnbWonInUsd} />
+          <PredictionWon mb="24px" color="primary" bold prefix="$" decimals={0} value={bnbWonInUsd} />
         ) : (
           <>
             <StyledSkeleton animation="pulse" variant="rect" mb="24px" width={180} />

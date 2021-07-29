@@ -35,6 +35,7 @@ const BulletList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
+  color: ${({ theme }) => theme.colors.secondary};
 
   li {
     margin: 0;

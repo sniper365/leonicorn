@@ -70,11 +70,11 @@ const BountyCard = () => {
   return (
     <>
       {tooltipVisible && tooltip}
-      <StyledCard>
+      <StyledCard style={{backgroundColor:'white'}}>
         <CardBody>
           <Flex flexDirection="column">
             <Flex alignItems="center" mb="12px">
-              <Text fontSize="16px" bold color="textSubtle" mr="4px">
+              <Text fontSize="16px" bold color="primary" mr="4px">
                 {t('Auto CAKE Bounty')}
               </Text>
               <Box ref={targetRef}>
@@ -86,7 +86,7 @@ const BountyCard = () => {
             <Flex flexDirection="column" mr="12px">
               <Heading>
                 {hasFetchedCakeBounty ? (
-                  <Balance fontSize="20px" bold value={cakeBountyToDisplay} decimals={3} />
+                  <Balance fontSize="20px" color="background" bold value={cakeBountyToDisplay} decimals={3} />
                 ) : (
                   <Skeleton height={20} width={96} mb="2px" />
                 )}

@@ -239,13 +239,13 @@ const Pools: React.FC = () => {
       <PageHeader>
         <Flex justifyContent="space-between" flexDirection={['column', null, null, 'row']}>
           <Flex flex="1" flexDirection="column" mr={['8px', 0]}>
-            <Heading as="h1" scale="xxl" color="secondary" mb="24px">
-              {t('Syrup Pools')}
+            <Heading as="h1" scale="xxl" color="text" mb="24px">
+              {t('Caves')}
             </Heading>
-            <Heading scale="md" color="text">
+            <Heading scale="md" color="background">
               {t('Just stake some tokens to earn.')}
             </Heading>
-            <Heading scale="md" color="text">
+            <Heading scale="md" color="background">
               {t('High APR, low risk.')}
             </Heading>
           </Flex>

@@ -17,7 +17,7 @@ const NowLive = styled(Text)`
 `
 
 const Wrapper = styled.div`
-  background-image: linear-gradient(#7645d9, #452a7a);
+  background-image: linear-gradient(180deg, #EA1E62 0%, #9B28B0 100%);
   max-height: max-content;
   overflow: hidden;
   ${({ theme }) => theme.mediaQueries.md} {
@@ -50,25 +50,8 @@ const RightWrapper = styled.div`
   justify-content: center;
   flex: 0.5;
 
-  & img {
-    width: 80%;
-    margin-top: 24px;
-  }
-
-  ${({ theme }) => theme.mediaQueries.sm} {
-    & img {
-      margin-top: 0;
-    }
-  }
-
   ${({ theme }) => theme.mediaQueries.md} {
     flex: 0.8;
-  }
-
-  ${({ theme }) => theme.mediaQueries.lg} {
-    & img {
-      margin-top: -25px;
-    }
   }
 `
 
@@ -131,7 +114,7 @@ const LotteryBanner: React.FC<{ currentLotteryPrize: string }> = ({ currentLotte
           </NavLink>
         </LeftWrapper>
         <RightWrapper>
-          <img src="/images/lottery/tombola.png" alt="lottery bunny" />
+          <img src="/images/lottery/ticket.png" alt="lottery ticket" />
         </RightWrapper>
       </Inner>
     </Wrapper>

@@ -151,7 +151,7 @@ const Select: React.FunctionComponent<SelectProps> = ({ options, onChange }) => 
           {options.map((option, index) =>
             index !== selectedOptionIndex ? (
               <ListItem onClick={onOptionClicked(index)} key={option.label}>
-                <Text>{option.label}</Text>
+                <Text color="textSubtle">{option.label}</Text>
               </ListItem>
             ) : null,
           )}
