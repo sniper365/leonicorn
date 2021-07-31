@@ -16,12 +16,12 @@ import EasterEgg from './components/EasterEgg'
 import history from './routerHistory'
 // Views included in the main bundle
 import Pools from './views/Pools'
-// import Swap from './views/Swap'
-// import {
-//   RedirectDuplicateTokenIds,
-//   RedirectOldAddLiquidityPathStructure,
-//   RedirectToAddLiquidity,
-// } from './views/AddLiquidity/redirects'
+import Swap from './views/Swap'
+import {
+  RedirectDuplicateTokenIds,
+  RedirectOldAddLiquidityPathStructure,
+  RedirectToAddLiquidity,
+} from './views/AddLiquidity/redirects'
 // import RedirectOldRemoveLiquidityPathStructure from './views/RemoveLiquidity/redirects'
 // import { RedirectPathToSwapOnly, RedirectToSwap } from './views/Swap/redirects'
 
@@ -42,8 +42,8 @@ const Ifos = lazy(() => import('./views/Ifos'))
 // const Voting = lazy(() => import('./views/Voting'))
 // const Proposal = lazy(() => import('./views/Voting/Proposal'))
 // const CreateProposal = lazy(() => import('./views/Voting/CreateProposal'))
-// const AddLiquidity = lazy(() => import('./views/AddLiquidity'))
-// const Liquidity = lazy(() => import('./views/Pool'))
+const AddLiquidity = lazy(() => import('./views/AddLiquidity'))
+const Liquidity = lazy(() => import('./views/Pool'))
 // const PoolFinder = lazy(() => import('./views/PoolFinder'))
 // const RemoveLiquidity = lazy(() => import('./views/RemoveLiquidity'))
 
@@ -113,26 +113,26 @@ const App: React.FC = () => {
             </Route> */}
 
             {/* Using this format because these components use routes injected props. We need to rework them with hooks */}
-            {/* <Route exact strict path="/swap" component={Swap} />
-            <Route exact strict path="/swap/:outputCurrency" component={RedirectToSwap} />
-            <Route exact strict path="/send" component={RedirectPathToSwapOnly} />
-            <Route exact strict path="/find" component={PoolFinder} />
+            <Route exact strict path="/swap" component={Swap} />
             <Route exact strict path="/liquidity" component={Liquidity} />
-            <Route exact strict path="/create" component={RedirectToAddLiquidity} />
             <Route exact path="/add" component={AddLiquidity} />
             <Route exact path="/add/:currencyIdA" component={RedirectOldAddLiquidityPathStructure} />
             <Route exact path="/add/:currencyIdA/:currencyIdB" component={RedirectDuplicateTokenIds} />
+            <Route exact strict path="/create" component={RedirectToAddLiquidity} />
             <Route exact path="/create" component={AddLiquidity} />
             <Route exact path="/create/:currencyIdA" component={RedirectOldAddLiquidityPathStructure} />
             <Route exact path="/create/:currencyIdA/:currencyIdB" component={RedirectDuplicateTokenIds} />
+            {/* <Route exact strict path="/swap/:outputCurrency" component={RedirectToSwap} />
+            <Route exact strict path="/send" component={RedirectPathToSwapOnly} />
+            <Route exact strict path="/find" component={PoolFinder} />
             <Route exact strict path="/remove/:tokens" component={RedirectOldRemoveLiquidityPathStructure} />
             <Route exact strict path="/remove/:currencyIdA/:currencyIdB" component={RemoveLiquidity} /> */}
 
             {/* Redirect */}
-            {/* <Route path="/pool">
+             <Route path="/pool">
               <Redirect to="/liquidity" />
             </Route>
-            <Route path="/staking">
+            {/* <Route path="/staking">
               <Redirect to="/pools" />
             </Route>
             <Route path="/syrup">
