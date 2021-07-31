@@ -12,7 +12,7 @@ const StyledPage = styled.div`
   padding: 16px;
   padding-bottom: 0;
   min-height: calc(100vh - 64px);
-  background: ${({ theme }) => theme.colors.gradients.bubblegum};
+  background: ${({ theme }) => theme.colors.background};
 
   ${({ theme }) => theme.mediaQueries.xs} {
     background-size: auto;
@@ -35,7 +35,7 @@ const Page: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({ children, ...pro
       <SubNav />
       {children}
       <Flex flexGrow={1} />
-      <Footer />
+      {/* <Footer /> */}
     </StyledPage>
   )
 }
