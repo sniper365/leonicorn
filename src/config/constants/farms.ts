@@ -17,7 +17,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 251,
-    lpSymbol: 'CAKE-BNB LP',
+    lpSymbol: 'LEON-BNB LP',
     lpAddresses: {
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
       56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
@@ -1843,7 +1843,7 @@ const farms: FarmConfig[] = [
    */
   {
     pid: 139,
-    lpSymbol: 'CAKE-BNB LP',
+    lpSymbol: 'LEON-BNB LP',
     lpAddresses: {
       97: '',
       56: '0xFB7E9FE9D13561AdA7131Fa746942a14F7dd4Cf6',
@@ -2966,7 +2966,7 @@ const farms: FarmConfig[] = [
    */
   {
     pid: 1,
-    lpSymbol: 'CAKE-BNB LP',
+    lpSymbol: 'LEON-BNB LP',
     lpAddresses: {
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
       56: '0xA527a61703D82139F8a06Bc30097cC9CAA2df5A6',

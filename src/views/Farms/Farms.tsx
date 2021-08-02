@@ -394,7 +394,7 @@ const Farms: React.FC = () => {
             <Text color="text" bold fontSize="16px" mr="4px">
               {t('Community Auctions')}
             </Text>
-            <ArrowForwardIcon color="primary" />
+            <ArrowForwardIcon color="white" />
           </Button>
         </NavLink>
       </PageHeader>
