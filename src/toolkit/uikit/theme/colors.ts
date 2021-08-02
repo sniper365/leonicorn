@@ -8,6 +8,7 @@ export const baseColors = {
   success: "#8BC44A",
   warning: "#FFB237",
   failure: "#EA1E62",
+  white: "#FFFFFF",
 };
 
 export const additionalColors = {

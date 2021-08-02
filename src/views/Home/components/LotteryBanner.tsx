@@ -114,7 +114,7 @@ const LotteryBanner: React.FC<{ currentLotteryPrize: string }> = ({ currentLotte
           </NavLink>
         </LeftWrapper>
         <RightWrapper>
-          <img src="/images/lottery/ticket.png" alt="lottery ticket" />
+          <img src="/images/lottery/ticket.svg" alt="lottery ticket" />
         </RightWrapper>
       </Inner>
     </Wrapper>
