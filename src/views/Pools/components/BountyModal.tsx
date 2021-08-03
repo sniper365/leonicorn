@@ -120,11 +120,11 @@ const BountyModal: React.FC<BountyModalProps> = ({ onDismiss, TooltipComponent }
         <ConnectWalletButton mb="28px" />
       )}
       <Flex justifyContent="center" alignItems="center">
-        <Text fontSize="16px" bold color="textSubtle" mr="4px">
+        <Text fontSize="16px" bold color="pink" mr="3px">
           {t('What’s this?')}
         </Text>
         <span ref={targetRef}>
-          <HelpIcon color="textSubtle" />
+          <HelpIcon color="pink" />
         </span>
       </Flex>
     </Modal>
