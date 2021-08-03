@@ -26,7 +26,7 @@ const Connector = styled.div<StatusProps>`
   height: 110%;
   top: 50%;
   left: calc(50% - 2px);
-  background-color: ${({ theme, status }) => theme.colors[status === "past" ? "success" : "textDisabled"]};
+  background-color: ${({ theme, status }) => theme.colors[status === "past" ? "success" : "backgroundAlt"]};
 `;
 
 const ChildrenWrapper = styled(Box)<{ isVisible: boolean }>`

@@ -59,7 +59,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
               {t('Activate your Profile')}
             </Heading>
             <Text color="textSubtle" small mb="16px">
-              {t('You’ll need an active PancakeSwap Profile to take part in an IFO!')}
+              {t('You’ll need an active LeonicornSwap Profile to take part in an IJO!')}
             </Text>
             {isStepValid ? (
               <Text color="success" bold>
@@ -76,11 +76,11 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
         return (
           <CardBody>
             <Heading as="h4" color="text" mb="16px">
-              {t('Get CAKE-BNB LP Tokens')}
+              {t('Get LEON-BNB LP Tokens')}
             </Heading>
             <Text color="textSubtle" small>
-              {t('Stake CAKE and BNB in the liquidity pool to get LP tokens.')} <br />
-              {t('You’ll spend them to buy IFO sale tokens.')}
+              {t('Stake LEOS and BNB in the liquidity pool to get LP tokens.')} <br />
+              {t('You’ll spend them to buy IJO sale tokens.')}
             </Text>
             <Button
               as={Link}
@@ -100,7 +100,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
               {t('Commit LP Tokens')}
             </Heading>
             <Text color="textSubtle" small>
-              {t('When the IFO sales are live, you can “commit” your LP tokens to buy the tokens being sold.')} <br />
+              {t('When the IJO sales are live, you can “commit” your LP tokens to buy the tokens being sold.')} <br />
               {t('We recommend committing to the Basic Sale first, but you can do both if you like.')}
             </Text>
           </CardBody>
@@ -113,7 +113,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
             </Heading>
             <Text color="textSubtle" small>
               {t(
-                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent CAKE-BNB LP tokens will be returned to your wallet.',
+                'After the IJO sales finish, you can claim any IJO tokens that you bought, and any unspent LEON-BNB LP tokens will be returned to your wallet.',
               )}
             </Text>
           </CardBody>

@@ -48,7 +48,7 @@ const EarnAssetCard = () => {
             <Heading color="text" scale="lg">
               {InPools}
             </Heading>
-            <ArrowForwardIcon mt={30} color="primary" />
+            <ArrowForwardIcon mt={30} color="white" />
           </Flex>
         </CardBody>
       </NavLink>

@@ -744,7 +744,7 @@
       {
         "components": [
           {
-            "internalType": "enum PancakeSwapLottery.Status",
+            "internalType": "enum LeonicornSwapLottery.Status",
             "name": "status",
             "type": "uint8"
           },
@@ -809,7 +809,7 @@
             "type": "uint32"
           }
         ],
-        "internalType": "struct PancakeSwapLottery.Lottery",
+        "internalType": "struct LeonicornSwapLottery.Lottery",
         "name": "",
         "type": "tuple"
       }

@@ -72,13 +72,13 @@ const App: React.FC = () => {
             {/* <Route exact path="/farms/auction">
               <FarmAuction />
             </Route> */}
-            <Route path="/farms">
+            <Route path="/meat">
               <Farms />
             </Route>
-            <Route path="/pools">
+            <Route path="/caves">
               <Pools />
             </Route>
-            <Route path="/ifo">
+            <Route path="/ijo">
               <Ifos />
             </Route>
             {/* <Route path="/lottery">

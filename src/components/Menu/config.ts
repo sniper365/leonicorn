@@ -24,12 +24,12 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Meat'),
     icon: 'FarmIcon',
-    href: '/farms',
+    href: '/meat',
   },
   {
     label: t('Caves'),
     icon: 'PoolIcon',
-    href: '/pools',
+    href: '/caves',
   },
   {
     label: t('Prediction'),
@@ -76,12 +76,12 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Info'),
     icon: 'InfoIcon',
-    href: 'https://pancakeswap.info',
+    href: '/info',
   },
   {
     label: t('IJO'),
     icon: 'IfoIcon',
-    href: '/ifo',
+    href: '/ijo',
   },
   {
     label: t('More'),
@@ -93,36 +93,12 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       },
       {
         label: 'Github',
-        href: '/_github',
+        href: 'https://github.com/Leonicornswap',
       },
       {
         label: 'Docs',
         href: '/_docs',
       },
-      // {
-      //   label: t('Contact'),
-      //   href: 'https://docs.pancakeswap.finance/contact-us',
-      // },
-      // {
-      //   label: t('Voting'),
-      //   href: '/voting',
-      // },
-      // {
-      //   label: t('Github'),
-      //   href: 'https://github.com/pancakeswap',
-      // },
-      // {
-      //   label: t('Docs'),
-      //   href: 'https://docs.pancakeswap.finance',
-      // },
-      // {
-      //   label: t('Blog'),
-      //   href: 'https://pancakeswap.medium.com',
-      // },
-      // {
-      //   label: t('Merch'),
-      //   href: 'https://pancakeswap.creator-spring.com/',
-      // },
     ],
   },
 ]

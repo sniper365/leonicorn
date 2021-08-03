@@ -12,47 +12,47 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
   switch (path) {
     // case '/':
     //   return {
-    //     title: `${t('Home')} | ${t('PancakeSwap')}`,
+    //     title: `${t('Home')} | ${t('LeonicornSwap')}`,
     //   }
     // case '/competition':
     //   return {
-    //     title: `${t('Trading Battle')} | ${t('PancakeSwap')}`,
+    //     title: `${t('Trading Battle')} | ${t('LeonicornSwap')}`,
     //   }
     // case '/prediction':
     //   return {
-    //     title: `${t('Prediction')} | ${t('PancakeSwap')}`,
+    //     title: `${t('Prediction')} | ${t('LeonicornSwap')}`,
     //   }
     // case '/farms':
     //   return {
-    //     title: `${t('Farms')} | ${t('PancakeSwap')}`,
+    //     title: `${t('Farms')} | ${t('LeonicornSwap')}`,
     //   }
     // case '/pools':
     //   return {
-    //     title: `${t('Pools')} | ${t('PancakeSwap')}`,
+    //     title: `${t('Pools')} | ${t('LeonicornSwap')}`,
     //   }
     // case '/lottery':
     //   return {
-    //     title: `${t('Lottery')} | ${t('PancakeSwap')}`,
+    //     title: `${t('Lottery')} | ${t('LeonicornSwap')}`,
     //   }
     // case '/collectibles':
     //   return {
-    //     title: `${t('Collectibles')} | ${t('PancakeSwap')}`,
+    //     title: `${t('Collectibles')} | ${t('LeonicornSwap')}`,
     //   }
     // case '/ifo':
     //   return {
-    //     title: `${t('Initial Farm Offering')} | ${t('PancakeSwap')}`,
+    //     title: `${t('Initial Farm Offering')} | ${t('LeonicornSwap')}`,
     //   }
     // case '/teams':
     //   return {
-    //     title: `${t('Leaderboard')} | ${t('PancakeSwap')}`,
+    //     title: `${t('Leaderboard')} | ${t('LeonicornSwap')}`,
     //   }
     // case '/profile/tasks':
     //   return {
-    //     title: `${t('Task Center')} | ${t('PancakeSwap')}`,
+    //     title: `${t('Task Center')} | ${t('LeonicornSwap')}`,
     //   }
     // case '/profile':
     //   return {
-    //     title: `${t('Your Profile')} | ${t('PancakeSwap')}`,
+    //     title: `${t('Your Profile')} | ${t('LeonicornSwap')}`,
     //   }
     default:
       return {

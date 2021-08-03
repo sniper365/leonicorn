@@ -19,7 +19,7 @@ const Ifos = () => {
         <Flex justifyContent="space-between" flexDirection={['column', null, null, 'row']}>
           <Flex flex="1" flexDirection="column" mr={['8px', 0]}>
             <Heading as="h1" scale="xxl" color="text" mb="24px">
-              {t('Caves')}
+              {t('IJO')}
             </Heading>
             <Heading scale="md" color="background">
               {t('Just stake some tokens to earn.')}
@@ -31,10 +31,10 @@ const Ifos = () => {
         <Flex justifyContent="center" alignItems="center" mb="32px">
           <ButtonMenu activeIndex={!isExact ? 1 : 0} scale="sm" variant="primary">
             <ButtonMenuItem as={Link} to={`${url}`}>
-              {t('Next IFO')}
+              {t('Next IJO')}
             </ButtonMenuItem>
             <ButtonMenuItem as={Link} to={`${url}/history`}>
-              {t('Past IFOs')}
+              {t('Past IJOs')}
             </ButtonMenuItem>
           </ButtonMenu>
         </Flex>
