@@ -9,6 +9,7 @@ export const baseColors = {
   warning: "#FFB237",
   failure: "#EA1E62",
   white: "#FFFFFF",
+  pink: "#EA1E62",
 };
 
 export const additionalColors = {

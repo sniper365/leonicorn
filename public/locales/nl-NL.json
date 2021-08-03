@@ -1129,7 +1129,7 @@
   "Disable Multihops": "Multihops uitschakelen",
   "Restricts swaps to direct pairs only.": "Ruilen beperken tot directe paren.",
   "Audio": "Audio",
-  "🐰 Turn down your volume a bit before you swap": "🐰 Verlaag je volume een beetje voor je ruilt",
+  "Turn down your volume a bit before you swap": "Verlaag je volume een beetje voor je ruilt",
   "Your transaction will revert if the price changes unfavorably by more than this percentage.": "Je transactie wordt teruggedraaid als de prijs ongunstig verandert met meer dan dit percentage.",
   "Enter a valid slippage percentage": "Voer een geldig slippagepercentage in",
   "Your transaction may fail": "Je transactie kan mislukken",

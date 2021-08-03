@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Text, PancakeToggle, Flex, Message, Modal, ModalBody, InjectedModalProps } from 'toolkit/uikit'
+import { Button, Text, Toggle, Flex, Message, Modal, ModalBody, InjectedModalProps } from 'toolkit/uikit'
 import {
   useAudioModeManager,
   useExpertModeManager,
@@ -85,7 +85,7 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
                 ml="4px"
               />
             </RowFixed>
-            <PancakeToggle
+            <Toggle
               id="toggle-expert-mode-button"
               checked={expertMode}
               onChange={
@@ -103,7 +103,7 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
               <Text fontSize="14px">{t('Disable Multihops')}</Text>
               <QuestionHelper text={t('Restricts swaps to direct pairs only.')} ml="4px" />
             </RowFixed>
-            <PancakeToggle
+            <Toggle
               id="toggle-disable-multihop-button"
               checked={singleHopOnly}
               onChange={() => {
@@ -114,9 +114,9 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
           <Flex justifyContent="space-between" alignItems="center" mb="8px">
             <RowFixed>
               <Text fontSize="14px">{t('Audio')}</Text>
-              <QuestionHelper text={t('🐰 Turn down your volume a bit before you swap')} ml="4px" />
+              <QuestionHelper text={t('Turn down your volume a bit before you swap')} ml="4px" />
             </RowFixed>
-            <PancakeToggle checked={audioPlay} onChange={toggleSetAudioMode} />
+            <Toggle checked={audioPlay} onChange={toggleSetAudioMode} />
           </Flex>
         </AutoColumn>
       </ModalBody>

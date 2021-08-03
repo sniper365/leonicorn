@@ -1129,7 +1129,7 @@
   "Disable Multihops": "Poista multihopit käytöstä",
   "Restricts swaps to direct pairs only.": "Rajoittaa vaihtoja vain suoriin pareihin.",
   "Audio": "Ääni",
-  "🐰 Turn down your volume a bit before you swap": "🐰 Pienennä äänenvoimakkuutta hieman ennen vaihtoa",
+  "Turn down your volume a bit before you swap": "Pienennä äänenvoimakkuutta hieman ennen vaihtoa",
   "Your transaction will revert if the price changes unfavorably by more than this percentage.": "Sinun transaktiosi peruuntuu, jos hinta muuttuu epäsuotuisasti tätä prosenttimäärää enemmän.",
   "Enter a valid slippage percentage": "Anna kelvollinen luisumisprosentti",
   "Your transaction may fail": "Transaktiosi voi epäonnistua",

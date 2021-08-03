@@ -1129,7 +1129,7 @@
   "Disable Multihops": "マルチホップを無効化",
   "Restricts swaps to direct pairs only.": "スワップを直接ペアのみに制限します。",
   "Audio": "音声",
-  "🐰 Turn down your volume a bit before you swap": "🐰 スワップする前にボリュームを少し下げます。",
+  "Turn down your volume a bit before you swap": "スワップする前にボリュームを少し下げます。",
   "Your transaction will revert if the price changes unfavorably by more than this percentage.": "価格がこの割合以上に不利に変動した場合、取引は取り消されます。",
   "Enter a valid slippage percentage": "有効なスリッページ率を入力してください",
   "Your transaction may fail": "取引が失敗する可能性があります",
