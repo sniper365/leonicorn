@@ -124,7 +124,7 @@ const BountyModal: React.FC<BountyModalProps> = ({ onDismiss, TooltipComponent }
           {t('What’s this?')}
         </Text>
         <span ref={targetRef}>
-          <HelpIcon color="pink" />
+          <HelpIcon color="pink" mt="3px" />
         </span>
       </Flex>
     </Modal>
