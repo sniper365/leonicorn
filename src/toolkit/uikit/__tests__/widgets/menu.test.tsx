@@ -679,7 +679,7 @@ it("renders correctly", () => {
               </svg>
             </button>
             <a
-              aria-label="Pancake home page"
+              aria-label="LeonicornSwap Home"
               class="c6"
               href="/"
             >
