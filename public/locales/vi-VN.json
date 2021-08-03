@@ -1129,7 +1129,7 @@
   "Disable Multihops": "Tắt Giao dịch nhiều bước",
   "Restricts swaps to direct pairs only.": "Chỉ cho phép các cặp trực tiếp hoán đổi.",
   "Audio": "Âm thanh",
-  "🐰 Turn down your volume a bit before you swap": "🐰 Hãy giảm khối lượng của bạn một chút trước khi hoán đổi",
+  "Turn down your volume a bit before you swap": "Hãy giảm khối lượng của bạn một chút trước khi hoán đổi",
   "Your transaction will revert if the price changes unfavorably by more than this percentage.": "Giao dịch của bạn sẽ hoàn tác nếu giá thay đổi bất lợi hơn tỷ lệ phần trăm này.",
   "Enter a valid slippage percentage": "Điền tỷ lệ phần trăm hợp lệ cho trượt giá",
   "Your transaction may fail": "Giao dịch của bạn có thể thất bại",

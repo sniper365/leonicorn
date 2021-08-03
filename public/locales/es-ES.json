@@ -1129,7 +1129,7 @@
   "Disable Multihops": "Desactivar saltos múltiples",
   "Restricts swaps to direct pairs only.": "Restringe los intercambios solo a los pares directos.",
   "Audio": "Audio",
-  "🐰 Turn down your volume a bit before you swap": "🐰 Baja el volumen un poco antes del intercambio",
+  "Turn down your volume a bit before you swap": "Baja el volumen un poco antes del intercambio",
   "Your transaction will revert if the price changes unfavorably by more than this percentage.": "Tu transacción se revertirá si el precio cambia desfavorablemente en un porcentaje mayor a este.",
   "Enter a valid slippage percentage": "Introduce un porcentaje de deslizamiento válido",
   "Your transaction may fail": "Tu transacción puede fallar",

@@ -1129,7 +1129,7 @@
   "Disable Multihops": "Multihop kereskedés letiltása",
   "Restricts swaps to direct pairs only.": "A csereügyleteket csak a közvetlen párokra korlátozza.",
   "Audio": "Audio",
-  "🐰 Turn down your volume a bit before you swap": "🐰 Csereügylet előtt vegye le kissé a hangerőt",
+  "Turn down your volume a bit before you swap": "Csereügylet előtt vegye le kissé a hangerőt",
   "Your transaction will revert if the price changes unfavorably by more than this percentage.": "Tranzakcióját sztornózza a rendszer, ha az ár változása kedvezőtlenebb, mint ez a százalékos érték.",
   "Enter a valid slippage percentage": "Írjon be egy érvényes százalékos csúszást",
   "Your transaction may fail": "Ügylete sikertelen lehet",

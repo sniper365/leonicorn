@@ -45,8 +45,7 @@ import SwapWarningModal from './components/SwapWarningModal'
 
 const Label = styled(Text)`
   font-size: 12px;
-  font-weight: bold;
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.white};
 `
 
 export default function Swap({ history }: RouteComponentProps) {
@@ -367,7 +366,7 @@ export default function Swap({ history }: RouteComponentProps) {
               <AutoColumn gap="8px" style={{ padding: '0 16px' }}>
                 {Boolean(trade) && (
                   <RowBetween align="center">
-                    <Label>{t('Price')}</Label>
+                    <Label color="white">{t('Price')}</Label>
                     <TradePrice
                       price={trade?.executionPrice}
                       showInverted={showInverted}
@@ -377,8 +376,8 @@ export default function Swap({ history }: RouteComponentProps) {
                 )}
                 {allowedSlippage !== INITIAL_ALLOWED_SLIPPAGE && (
                   <RowBetween align="center">
-                    <Label>{t('Slippage Tolerance')}</Label>
-                    <Text bold color="primary">
+                    <Label color="white">{t('Slippage Tolerance')}</Label>
+                    <Text bold color="textSubtle">
                       {allowedSlippage / 100}%
                     </Text>
                   </RowBetween>

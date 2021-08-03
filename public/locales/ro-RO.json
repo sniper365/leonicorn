@@ -1129,7 +1129,7 @@
   "Disable Multihops": "Dezactivează etapele multiple",
   "Restricts swaps to direct pairs only.": "Restricționează schimbările numai la perechi directe.",
   "Audio": "Audio",
-  "🐰 Turn down your volume a bit before you swap": "🐰 Redu puțin volumul înainte de a schimba",
+  "Turn down your volume a bit before you swap": "Redu puțin volumul înainte de a schimba",
   "Your transaction will revert if the price changes unfavorably by more than this percentage.": "Tranzacția ta fi anulată dacă prețul se modifică în mod nefavorabil cu un procent mai mare decât acesta.",
   "Enter a valid slippage percentage": "Introdu un procent de slippage valid",
   "Your transaction may fail": "Tranzacția ta poate eșua",

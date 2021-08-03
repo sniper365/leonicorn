@@ -1129,7 +1129,7 @@
   "Disable Multihops": "停用多躍點",
   "Restricts swaps to direct pairs only.": "將交換限制為僅限直接幣對。",
   "Audio": "音訊",
-  "🐰 Turn down your volume a bit before you swap": "🐰 在您交換之前略微調低音量",
+  "Turn down your volume a bit before you swap": "在您交換之前略微調低音量",
   "Your transaction will revert if the price changes unfavorably by more than this percentage.": "如果價格變動幅度超過此百分比，系統將退還您的交易。",
   "Enter a valid slippage percentage": "輸入有效的滑動百分比",
   "Your transaction may fail": "您的交易可能會失敗",
