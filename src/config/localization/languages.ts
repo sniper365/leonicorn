@@ -31,12 +31,9 @@ export const ZHTW: Language = { locale: 'zh-TW', language: '繁體中文', code:
 
 export const languages = {
   'en-US': EN,
-  'de-DE': DE,
-  'es-ES': ESES,
-  'fil-PH': FIL,
-  'hu-HU': HU,
-  'id-ID': ID,
-
+  // 'fil-PH': FIL,
+  // 'hu-HU': HU,
+  // 'id-ID': ID,
   // 'ar-SA': AR,
   // 'bn-BD': BN,
   // 'en-US': EN,

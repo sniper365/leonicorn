@@ -40,7 +40,7 @@ const getRibbonComponent = (ifo: Ifo, status: IfoStatus, t: any) => {
   if (status === 'live' || (status === 'finished' && ifo.isActive)) {
     return (
       <CardRibbon
-        variantColor="primary"
+        variantColor="success"
         ribbonPosition="left"
         style={{ textTransform: 'uppercase' }}
         text={status === 'live' ? `${t('Live')}!` : `${t('Finished')}!`}

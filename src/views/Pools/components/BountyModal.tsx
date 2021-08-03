@@ -61,7 +61,7 @@ const BountyModal: React.FC<BountyModalProps> = ({ onDismiss, TooltipComponent }
       const tx = await cakeVaultContract.harvest({ gasLimit: 300000 })
       const receipt = await tx.wait()
       if (receipt.status) {
-        toastSuccess(t('Bounty collected!'), t('CAKE bounty has been sent to your wallet.'))
+        toastSuccess(t('Bounty collected!'), t('LEON bounty has been sent to your wallet.'))
         setPendingTx(false)
         onDismiss()
       }
@@ -77,7 +77,7 @@ const BountyModal: React.FC<BountyModalProps> = ({ onDismiss, TooltipComponent }
       <Flex alignItems="flex-start" justifyContent="space-between">
         <Text>{t('You’ll claim')}</Text>
         <Flex flexDirection="column">
-          <Balance bold value={cakeBountyToDisplay} decimals={7} unit=" CAKE" />
+          <Balance bold value={cakeBountyToDisplay} decimals={7} unit=" LEON" />
           <Text fontSize="12px" color="textSubtle">
             <Balance
               fontSize="12px"
@@ -95,7 +95,7 @@ const BountyModal: React.FC<BountyModalProps> = ({ onDismiss, TooltipComponent }
         <Text fontSize="14px" color="textSubtle">
           {t('Pool total pending yield')}
         </Text>
-        <Balance color="textSubtle" value={totalYieldToDisplay} unit=" CAKE" />
+        <Balance color="textSubtle" value={totalYieldToDisplay} unit=" LEON" />
       </Flex>
       <Flex alignItems="center" justifyContent="space-between" mb="24px">
         <Text fontSize="14px" color="textSubtle">
@@ -120,11 +120,11 @@ const BountyModal: React.FC<BountyModalProps> = ({ onDismiss, TooltipComponent }
         <ConnectWalletButton mb="28px" />
       )}
       <Flex justifyContent="center" alignItems="center">
-        <Text fontSize="16px" bold color="textSubtle" mr="4px">
+        <Text fontSize="16px" bold color="pink" mr="3px">
           {t('What’s this?')}
         </Text>
         <span ref={targetRef}>
-          <HelpIcon color="textSubtle" />
+          <HelpIcon color="pink" mt="3px" />
         </span>
       </Flex>
     </Modal>

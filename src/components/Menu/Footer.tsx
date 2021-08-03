@@ -47,7 +47,7 @@ const Footer = () => {
           </ButtonMenuItem>
         </ButtonMenu> */}
         <LinkExternal
-          href="https://www.binance.org/en/bridge?utm_source=PancakeSwap"
+          href="https://www.binance.org/en/bridge?utm_source=LeonicornSwap"
           ml={[0, 0, '40px']}
           mt={['20px', '20px', 0]}
           mb={['8px', '8px', 0]}
@@ -66,7 +66,7 @@ const Footer = () => {
             id="clickExchangeHelp"
             as="a"
             external
-            href="https://docs.pancakeswap.finance/products/pancakeswap-exchange"
+            href="https://leonicornswap.com/docs"
             variant="subtle"
           >
             {t('Need help ?')}

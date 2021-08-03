@@ -35,7 +35,6 @@ const DropdownContent = styled.div<{ position: Position }>`
 
 const Container = styled.div`
   position: relative;
-  margin: auto;
   &:hover ${DropdownContent}, &:focus-within ${DropdownContent} {
     display: flex;
   }
