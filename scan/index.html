@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Leonicorn Scan</title>
+	<meta name="description" content="🦁 Leonicorn Swap is an advanced AMM with features Like NFT Marketplace, Lottery, IDO and many other advanced features. We provide user-friendly, efficient and secure crypto solutions and utilizing blockchain technology.">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="nav">
+		<div class="logo"></div>
+		<div class="menu-item">Burning</div>
+		<a href="https://leonicornswap.com/" class="btn-back">Back to SWAP</a>
+	</div>
+	<div class="content">
+		<ul class="overall-data">
+			<li class="item">
+				<span class="data totalsupply"></span>
+				<label>Total Supply</label>
+			</li>
+			<li class="item">
+				<span class="data lastday"></span>
+				<label>Burned Last 24h</label>
+			</li>
+			<li class="item">
+				<span class="data totalburn"></span>
+				<label>Total Burned</label>
+			</li>
+			<li class="item">
+				<span class="data circulating"></span>
+				<label>Current Supply</label>
+			</li>
+		</ul>
+		<div class="countdown">
+			<h1>LEOS Burning Ends in</h1>
+			<div class="counter">
+				<span class="date daysleft"></span>
+				<span class="date timehours"></span>
+				<span class="date timeminutes"></span>
+				<span class="date timeseconds"></span>
+			</div>
+			<div class="dd">
+				<label>Days</label>
+				<label>Hours</label>
+				<label>Minutes</label>
+				<label>Seconds</label>
+			</div>
+		</div>
+		<div class="average">
+			<span class="amount"></span>
+			<h2>Average Burning Speed</h2>
+			<a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x2c8368f8f474ed9af49b87eac77061beb986c2f1" target="_blank" class="btn-buy">Buy LEOS</a>
+		</div>
+	</div>
+	<div class="chart-container">
+		<div id="chart"></div>
+	</div>
+	<div class="coins">
+		<span class="coin fall1"></span>
+		<span class="coin fall2"></span>
+		<span class="coin fall3"></span>
+		<span class="coin fall4"></span>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+       var options = {
+          series: [{
+          name: 'Tokens burned',
+          data: []
+        }],
+        chart: {
+          height: 400,
+          type: 'area',
+			toolbar: {
+				show:false
+			},
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth',
+		  colors: ['rgba(0,0,0,0)']
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: [],
+		  axisBorder: {
+			  show: false
+		  },
+		  axisTicks: {
+			  show: false
+		  },
+		  labels: {
+			  style: {
+				  colors: ['#777E89'],
+				  fontSize: '14px',
+				  fontFamily: 'Rubik, Arial, sans-serif',
+				  fontWeight: 400,
+			  },
+		  },
+        },
+		yaxis: {
+          	show:false,
+          labels: {
+			  style: {
+				  colors: ['#777E89'],
+				  fontSize: '14px',
+				  fontFamily: 'Rubik, Arial, sans-serif',
+				  fontWeight: 400,
+			  },
+			  
+		  },
+		  
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+		fill: {
+		  type: 'gradient',
+			gradient: {
+			  shadeIntensity: 1,
+			  opacityFrom: 1,
+			  opacityTo: 1,
+			  stops: [0, 90, 100],
+				colorStops: [
+				  [
+					{
+					  offset: 0,
+					  color: '#EA1E62',
+					  opacity: 1
+					},
+					{
+					  offset: 100,
+					  color: '#FF2B71',
+					  opacity: 1
+					},
+				  ],
+				]
+			}
+
+		},
+		grid: {
+			show: false 
+		},
+        };
+
+		$.getJSON('https://mychips.gg/leos_numbers.php',function(data){
+			console.log(data);
+			$('.totalsupply').html('210,000,000 LEOS');
+			$('.circulating').html(number_format((210000000-data.totalburn),0,'.',',')+' LEOS');
+			$('.lastday').html(number_format(data.last,0,'.',',')+' LEOS');
+			$('.totalburn').html(number_format(data.totalburn,0,'.',',')+' LEOS');
+			$('.average .amount').html(number_format(data.average_per_day,0,'.',',')+' LEOS/Day');
+
+			var daysleft = (90000000-data.deadburn)/data.average_per_day;
+			$('.daysleft').html(Math.floor(daysleft));
+
+			getTime();
+			setInterval(function(){
+				getTime();
+			},1000);
+
+			for(d in data.times){
+				options.xaxis.categories.push(d);
+				options.series[0].data.push(data.times[d]);
+			}
+
+			var chart = new ApexCharts(document.querySelector("#chart"), options);
+			chart.render();
+
+		});
+
+		getTime = function(){
+			let nextMidnight = new Date();
+
+			nextMidnight.setHours(24,0,0,0);
+
+			let now = new Date();
+
+			let rest = (nextMidnight.getTime() - now.getTime())/1000;
+
+			const hours = Math.floor(rest/3600);
+			rest = rest-(hours*3600);
+			const minutes = Math.floor(rest/60);
+			rest = rest-(minutes*60);
+			const seconds = Math.floor(rest);
+
+			$('.timehours').html(("0" + hours).slice(-2));
+			$('.timeminutes').html(("0" + minutes).slice(-2));
+			$('.timeseconds').html(("0" + seconds).slice(-2));
+
+		}
+		number_format = function (number, decimals, dec_point, thousands_sep) {
+			number = number.toFixed(decimals);
+
+			var nstr = number.toString();
+			nstr += '';
+			x = nstr.split('.');
+			x1 = x[0];
+			x2 = x.length > 1 ? dec_point + x[1] : '';
+			var rgx = /(\d+)(\d{3})/;
+
+			while (rgx.test(x1))
+				x1 = x1.replace(rgx, '$1' + thousands_sep + '$2');
+
+			return x1 + x2;
+		}
+
+    </script>
+</div>
+
+</body>
+</html>

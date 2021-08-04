@@ -1,0 +1,435 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;	padding: 0;	border: 0;	outline: 0;	font-size: 100%; vertical-align: baseline; font-family: 'Rubik', Helvetica, Arial, Tahoma, Verdana;}
+
+html, body {
+	height: 100%;
+    min-height: 100%;
+	min-width: 320px;
+	font-size: 14px;
+	color: #777E89;
+	background: #15181E;
+}
+
+a {
+	cursor: pointer;
+}
+
+.wrap {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.wrap .nav {
+	position: fixed;
+	z-index: 11;
+	width: calc(100% - 30px);
+	padding: 11px 15px;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	background: #20252D;
+	border-bottom: 2px solid #2A2E36;
+}
+
+.wrap .nav .logo {
+	width: 150px;
+	height: 40px;
+	background: url('../img/leonicorn-scan.svg') no-repeat left top;
+	background-size: auto 40px;
+	animation: reveal 1s linear;
+	animation-iteration-count: 1;
+}
+
+@-webkit-keyframes reveal {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes logo-reveal {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.wrap .nav .menu-item {
+	margin-left: 65px;
+	display: flex;
+	width: calc(100% - 355px);
+	height: 40px;
+	padding: 0 0 0 40px;
+	color: #FFF;
+	font-size: 16px;
+	align-items: center;
+	background: url('../img/icon-fire.svg') no-repeat 8px center;
+	background-size: 24px;
+}
+
+.wrap .nav .btn-back {
+	display: flex;
+	width: 140px;
+	height: 32px;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
+	background: #EA1E62;
+	box-shadow: inset 0px -1px 1px rgba(14, 14, 44, 0.4);
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	border-radius: 16px;
+}
+
+.wrap .nav .btn-back:hover {
+	background: #FA226A;
+	transition: 0.3s ease-in-out all;
+}
+
+.wrap .content {
+	position: relative;
+	z-index: 10;
+	margin: 0 auto;
+	max-width: 1250px;
+	width: calc(100% - 30px);
+	min-height: calc(100% - 479px);
+	padding: 64px 15px 0 15px;
+}
+
+.wrap .chart-container {
+	/*position: relative;*/
+	position: fixed;
+    bottom: 0;
+
+	z-index: 9;
+	margin: 0;
+	width: 100%;
+	height: 415px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.wrap .chart-container:after {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 365px;
+	width: 100%;
+	height: 50px;
+	content:'';
+	background: #15181E;
+}
+
+.wrap #chart {
+	position: relative;
+	z-index: 11;
+	margin: 0;
+	width: 100%;
+	height: 415px;
+}
+
+.wrap .content .overall-data {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 20px 0;
+	list-style-type: none;
+}
+
+.wrap .content .overall-data .item {
+	width: calc(25% - 30px);
+	padding: 0 15px;
+}
+
+.wrap .content .overall-data .item .data,
+.wrap .content .overall-data .item label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 26px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.wrap .content .overall-data .item .data {
+	font-size: 16px;
+	color: #FFF;
+}
+
+.wrap .content .overall-data .item label {
+	font-size: 14px;
+}
+
+.wrap .content .countdown {
+	margin: 0 auto;
+	display: block;
+	width: 560px;
+	padding: 40px 0;
+	border-bottom: 1px solid #303742;
+}
+
+.wrap .content .countdown h1 {
+	display: flex;
+	height: 100px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 1;
+	color: #EA1E62;
+}
+
+.wrap .content .countdown .counter {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.wrap .content .countdown .counter .date {
+	display: flex;
+	width: 25%;
+	height: 70px;
+	align-items: center;
+	justify-content: center;
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 1;
+	color: #FFF;
+}
+
+.wrap .content .countdown .dd {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.wrap .content .countdown .dd label {
+	display: flex;
+	width: 25%;
+	height: 30px;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1;
+	color: #FFF;
+}
+
+.wrap .content .average {
+	display: block;
+	width: 100%;
+	padding: 50px 0;
+}
+
+.wrap .content .average .amount {
+	display: flex;
+	height: 36px;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	line-height: 1;
+	color: #EA1E62;
+}
+
+.wrap .content .average h2 {
+	display: flex;
+	margin-bottom: 60px;
+	height: 24px;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+	color: #FFF;
+}
+
+.wrap .content .average .btn-buy {
+	margin: 0 auto;
+	display: flex;
+	width: 280px;
+	height: 48px;
+	color: #EA1E62;
+	font-size: 16px;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	box-shadow: inset 0px -1px 1px rgba(14, 14, 44, 0.4);
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	border-radius: 16px;
+}
+
+.wrap .content .average .btn-buy:hover {
+	color: #FA226A;
+	background: #fff;
+	transition: 0.3s ease-in-out all;
+}
+
+.wrap .coins {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.wrap .coins .coin {
+	position: absolute;
+	z-index: 1;
+	top: -100px;
+	width: 100px;
+	height: 100px;
+	background: url('../img/coin.svg') no-repeat;
+	background-size: 100px;
+}
+
+.wrap .coins .coin.fall1 {
+	left: calc(15% - 50px);
+	opacity: 0.5;
+	animation: coin1-rotate 8s linear infinite;
+}
+
+@-webkit-keyframes coin1-rotate {
+	0% {top: -100px; transform: rotate(0deg);}
+	50% {transform: rotate(180deg);}
+	100% {top: 100%; transform: rotate(360deg);}
+}
+
+@keyframes coin1-rotate {
+	0% {top: -100px; transform: rotate(0deg);}
+	50% {transform: rotate(180deg);}
+	100% {top: 100%; transform: rotate(360deg);}
+}
+
+.wrap .coins .coin.fall2 {
+	left: calc(30% - 50px);
+	opacity: 0.25;
+	animation: coin2-rotate 6s linear infinite;
+	animation-delay: 2s;
+}
+
+@-webkit-keyframes coin2-rotate {
+	0% {top: -100px; transform: rotate(0deg);}
+	25% {transform: rotate(180deg);}
+	50% {transform: rotate(360deg);}
+	75% {transform: rotate(540deg);}
+	100% {top: 100%; transform: rotate(720deg);}
+}
+
+@keyframes coin2-rotate {
+	0% {top: -100px; transform: rotate(0deg);}
+	25% {transform: rotate(180deg);}
+	50% {transform: rotate(360deg);}
+	75% {transform: rotate(540deg);}
+	100% {top: 100%; transform: rotate(720deg);}
+}
+
+.wrap .coins .coin.fall3 {
+	right: calc(15% - 50px);
+	opacity: 0.25;
+	animation: coin3-rotate 6s linear infinite;
+}
+
+@-webkit-keyframes coin3-rotate {
+	0% {top: -100px; transform: rotate(0deg);}
+	25% {transform: rotate(180deg);}
+	50% {transform: rotate(360deg);}
+	75% {transform: rotate(540deg);}
+	100% {top: 100%; transform: rotate(720deg);}
+}
+
+@keyframes coin3-rotate {
+	0% {top: -100px; transform: rotate(0deg);}
+	25% {transform: rotate(180deg);}
+	50% {transform: rotate(360deg);}
+	75% {transform: rotate(540deg);}
+	100% {top: 100%; transform: rotate(720deg);}
+}
+
+.wrap .coins .coin.fall4 {
+	right: calc(30% - 50px);
+	opacity: 0.5;
+	animation: coin4-rotate 8s linear infinite;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes coin4-rotate {
+	0% {top: -100px; transform: rotate(0deg);}
+	50% {transform: rotate(180deg);}
+	100% {top: 100%; transform: rotate(360deg);}
+}
+
+@keyframes coin4-rotate {
+	0% {top: -100px; transform: rotate(0deg);}
+	50% {transform: rotate(180deg);}
+	100% {top: 100%; transform: rotate(360deg);}
+}
+
+@media screen and (max-width: 860px) {
+	.wrap .nav .menu-item {
+		margin-left: 20px;
+		width: calc(100% - 310px);
+	}	
+	
+	.wrap .content .overall-data .item {
+		width: calc(50% - 30px);
+		margin-bottom: 20px;
+	}
+	
+	.wrap .coins .coin {
+		width: 60px;
+		height: 60px;
+		background: url('../img/coin.svg') no-repeat;
+		background-size: 60px;
+	}
+	
+	.wrap .content .overall-data {
+		padding: 20px 0 0 0;
+	}
+	
+	.wrap .content .countdown {
+		margin: 0 15px;
+		width: calc(100% - 30px);
+		padding: 0 0 20px 0;
+	}
+	
+	.wrap .content .countdown h1 {
+		height: 80px;
+		font-size: 36px;
+	}
+	
+	.wrap .content .countdown .counter .date {
+		height: 50px;
+		font-size: 36px;
+	}
+	
+	.wrap .content .countdown .dd label {
+		height: 20px;
+	}
+	
+	.wrap .content .average {
+		padding: 25px 0;
+	}
+	
+	.wrap .content .average h2 {
+		margin-bottom: 25px;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	.wrap .nav .logo {
+		width: calc(100% - 140px);
+	}
+	
+	.wrap .nav .menu-item {
+		display: none;
+	}
+	
+	.wrap .content .countdown .counter .date {
+		height: 40px;
+		font-size: 24px;
+	}
+}
