@@ -77,7 +77,7 @@ a {
 	cursor: pointer;
 	text-decoration: none;
 	outline: none;
-	border-radius: 16px;
+	border-radius: 8px;
 }
 
 .wrap .nav .btn-back:hover {
@@ -257,7 +257,7 @@ a {
 	cursor: pointer;
 	text-decoration: none;
 	outline: none;
-	border-radius: 16px;
+	border-radius: 8px;
 }
 
 .wrap .content .average .btn-buy:hover {
