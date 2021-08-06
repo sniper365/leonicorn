@@ -30,7 +30,7 @@ const Nav = () => {
         <ButtonMenuItem id="swap-nav-link" to="/swap" as={Link}>
           {t('Swap')}
         </ButtonMenuItem>
-        <ButtonMenuItem id="pool-nav-link" to="//liquidity" as={Link}>
+        <ButtonMenuItem id="pool-nav-link" to="/liquidity" as={Link}>
           {t('Liquidity')}
         </ButtonMenuItem>
       </ButtonMenu>
