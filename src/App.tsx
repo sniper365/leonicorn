@@ -129,10 +129,10 @@ const App: React.FC = () => {
             <Route exact strict path="/remove/:currencyIdA/:currencyIdB" component={RemoveLiquidity} /> */}
 
             {/* Redirect */}
-             <Route path="/pool">
+            {/*  <Route path="/pool">
               <Redirect to="/liquidity" />
             </Route>
-            {/* <Route path="/staking">
+            <Route path="/staking">
               <Redirect to="/pools" />
             </Route>
             <Route path="/syrup">
