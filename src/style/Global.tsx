@@ -19,6 +19,12 @@ const GlobalStyle = createGlobalStyle`
       max-width: 100%;
     }
   }
+
+  // disable net_Error in development mode
+
+  iframe {
+    display: none;
+  }
 `
 
 export default GlobalStyle
