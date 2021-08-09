@@ -80,7 +80,7 @@ const Alert: React.FC<AlertProps> = ({ title, children, variant, onClick }) => {
   return (
     <StyledAlert>
       <IconLabel variant={variant} hasDescription={!!children}>
-        <Icon color="currentColor" width="24px" />
+        <Icon color="white" width="24px" />
       </IconLabel>
       <Details hasHandler={!!onClick}>
         <Text bold>{title}</Text>
@@ -89,7 +89,7 @@ const Alert: React.FC<AlertProps> = ({ title, children, variant, onClick }) => {
       {onClick && (
         <CloseHandler>
           <IconButton scale="sm" variant="text" onClick={onClick}>
-            <CloseIcon width="24px" color="currentColor" />
+            <CloseIcon width="24px" color="textSubtle" />
           </IconButton>
         </CloseHandler>
       )}
