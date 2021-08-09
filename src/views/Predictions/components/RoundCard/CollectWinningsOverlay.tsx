@@ -22,7 +22,7 @@ const Wrapper = styled(Flex)<{ isBottom: CollectWinningsOverlayProps['isBottom']
   ${({ isBottom }) => {
     return isBottom
       ? `
-      border-radius: 0 0 16px 16px;
+      border-radius: 0 0 8px 8px;
       bottom: 0;
     `
       : `
