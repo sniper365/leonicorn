@@ -10,7 +10,6 @@ const StyledNav = styled.nav`
 
 const getActiveIndex = (pathname: string): number => {
   if (
-    pathname.includes('/pool') ||
     pathname.includes('/create') ||
     pathname.includes('/add') ||
     pathname.includes('/remove') ||
@@ -31,7 +30,7 @@ const Nav = () => {
         <ButtonMenuItem id="swap-nav-link" to="/swap" as={Link}>
           {t('Swap')}
         </ButtonMenuItem>
-        <ButtonMenuItem id="pool-nav-link" to="/pool" as={Link}>
+        <ButtonMenuItem id="pool-nav-link" to="/liquidity" as={Link}>
           {t('Liquidity')}
         </ButtonMenuItem>
       </ButtonMenu>
